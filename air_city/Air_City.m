@@ -1,0 +1,199 @@
+Fs=44100;
+%天空之城，C调
+C=5;
+modc=0.025;%修音函数常量
+rythm=0.6;%四分之一拍
+y1=f(-1,6,rythm/2);
+y2=f(-1,7,rythm/2);
+%-------------
+y3=f(0,1,rythm*3/2);
+y4=f(-1,7,rythm/2);
+y5=f(0,1,rythm);
+y6=f(0,3,rythm);
+%-------------
+y7=f(-1,7,rythm*3);
+y8=f(-1,3,rythm);
+%-------------
+y9=f(-1,6,rythm*3/2);
+y10=f(-1,5,rythm/2);
+y11=f(-1,6,rythm);
+y12=f(0,1,rythm);%have problem
+%--------------
+y13=f(-1,5,rythm*3);
+y14=f(-1,3,rythm);
+%--------------
+y15=f(-1,4,rythm*3.2);
+y16=f(-1,3,rythm/2);
+y17=f(-1,4,rythm/2);
+y18=f(0,1,rythm*3/2);
+%--------------
+y19=f(-1,3,rythm*3);
+y20=f(0,1,rythm);
+%--------------
+y21=f(-1,7,rythm*3/2);
+x22=linspace(0,C*pi*rythm/2,Fs*rythm/2);
+mod=sin(modc*pi*x22/x22(end));
+y22=mod.*sin(x22*185).*(1-x22/(C*pi*rythm/2));
+x23=linspace(0,C*pi*rythm,Fs*rythm);
+mod=sin(modc*pi*x23/x23(end));
+y23=mod.*sin(x23*185).*(1-x23/(C*pi*rythm));
+y24=f(-1,7,rythm);
+%---------------
+y25=f(-1,7,rythm*3);
+y26=f(-1,6,rythm/2);
+y27=f(-1,7,rythm/2);
+%---------------
+y28=f(0,1,rythm*3/2);
+y29=f(-1,7,rythm/2);
+y30=f(0,1,rythm);
+y31=f(0,3,rythm);
+%---------------second end
+y32=f(-1,7,rythm*3);
+y33=f(-1,3,rythm/2);
+y34=f(-1,3,rythm/2);
+%---------------
+y35=f(-1,6,rythm*3/2);
+y36=f(-1,5,rythm/2);
+y37=f(-1,6,rythm);
+y38=f(0,1,rythm);
+%---------------
+y39=f(-1,5,rythm*3);
+y40=f(-1,3,rythm);
+%---------------
+y41=f(-1,4,rythm);
+y42=f(0,1,rythm/2);
+y43=f(-1,7,rythm*3/2);
+y44=f(0,1,rythm);
+%---------------
+y45=f(0,2,rythm);
+y46=f(0,3,rythm/2);
+y47=f(0,1,rythm*3/2);
+y48=f(0,1,rythm);%y41，y48之间有连音符emmm.....舍弃y48,延长y47
+%---------------
+y49=f(0,1,rythm/2);
+y50=f(-1,7,rythm/2);
+y51=f(-1,6,rythm);
+y52=f(-1,7,rythm);
+x53=linspace(0,C*pi*rythm,Fs*rythm);
+mod=sin(modc*pi*x53/x53(end));
+y53=mod.*sin(x53*415).*(1-x53/(C*pi*rythm));
+%-----------------
+y54=f(-1,6,rythm);
+y55=f(0,1,rythm/2);
+y56=f(0,2,rythm/2);
+%-----------------
+y57=f(0,3,rythm*3/2);
+y58=f(0,2,rythm/2);
+y59=f(0,3,rythm);
+y60=f(0,5,rythm);
+%------------------fouth end
+y61=f(0,2,rythm*3);
+y62=f(-1,5,rythm);
+%------------------
+y63=f(0,1,rythm*3/2);
+y64=f(-1,7,rythm/2);
+y65=f(0,1,rythm);
+y66=f(0,2,rythm/2);
+y67=f(0,3,rythm/2);
+%-------------------
+y68=f(0,3,rythm*4);
+%-------------------
+y69=f(-1,6,rythm/2);
+y70=f(-1,7,rythm/2);
+y71=f(0,1,rythm);
+y72=f(-1,7,rythm/2);
+y73=f(0,1,rythm/2);
+y74=f(0,2,rythm);
+%-------------------
+y75=f(0,1,rythm*3/2);
+y76=f(-1,5,rythm/2);
+y77=f(-1,5,rythm*2);
+%-------------------
+y78=f(0,4,rythm);
+y79=f(0,3,rythm);
+y80=f(0,2,rythm);
+y81=f(0,1,rythm);
+%-------------------
+y82=f(0,3,rythm*3/2);
+y83=f(0,3,rythm);
+%-------------------
+y84=f(0,6,rythm*3/2);
+y85=f(0,6,rythm/2);
+y86=f(0,5,rythm*3/2);
+y87=f(0,5,rythm/2);
+%-------------------sixth end
+y88=f(0,3,rythm/2);
+y89=f(0,2,rythm/2);
+y90=f(0,1,rythm);
+y91=f(0,1,rythm*2);
+%-------------------
+y92=f(0,2,rythm*3/2);
+y93=f(0,1,rythm/2);
+y94=f(0,2,rythm);
+y95=f(0,5,rythm);
+%-------------------
+y96=f(0,3,rythm*3);
+y97=f(0,3,rythm);
+%-------------------
+y98=f(0,6,rythm*3/2);
+y99=f(0,6,rythm/2);
+y100=f(0,5,rythm*3/2);
+y101=f(0,5,rythm/2);
+%-------------------
+y102=f(0,3,rythm/2);
+y103=f(0,2,rythm/2);
+y104=f(0,1,rythm);
+y105=f(0,1,rythm*2);
+%--------------------
+y106=f(0,2,rythm*3/2);
+y107=f(0,1,rythm/2);
+y108=f(0,2,rythm);
+y109=f(-1,7,rythm);
+%--------------------
+y110=f(-1,6,rythm*3);
+y111=0;
+%---------------------End
+
+
+y=2*[y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,y13,y14,y15,y16,y17,y18,y19,y20...
+    y21,y22,y23,y24,y25,y26,y27,y28,y29,y30,y31,y32,y33,y34,y35,y36,y37...
+    y38,y39,y40,y41,y42,y43,y44,y45,y46,y47,y49,y50,y51,y52,y53,y54...
+    y55,y56,y57,y58,y59,y60,y61,y62,y63,y64,y65,y66,y67,y68,y69,y70,y71...
+    y72,y73,y74,y75,y76,y77,y78,y79,y80,y81,y82,y83,y84,y85,y86,y87,y88...
+    y99,y100,y101,y102,y103,y104,y105,y106,y107,y108,y109,y110];
+
+plot(y);
+sound(y,Fs);
+
+
+function y=f(a,tone,rythm)
+Fs=44100;
+C=5;
+modc=0.1;
+
+
+%低音
+if a==-1
+    freqs=[130.8,146.8,164.8,174.6,196,220,246.9];
+    x=linspace(0,C*pi*rythm,Fs*rythm);
+    mod=sin(modc*pi*x/x(end));
+    y=mod.*sin(x*freqs(tone)).*(1-x/(C*rythm*pi));
+    
+end
+%中音
+if a==0
+    freqs=[261.6,293.6,329.6,349.2,392,440,493.8];
+    x=linspace(0,C*pi*rythm,Fs*rythm);
+    mod=sin(modc*pi*x/x(end));
+    y=mod.*sin(x*freqs(tone)).*(1-x/(C*rythm*pi));
+end
+%高音
+if a==1
+    freqs=[523.2,587.2,659.2,698.4,784,880,987.6];
+    x=linspace(0,pi*rythm,Fs*rythm);
+    mod=sin(modc*pi*x/x(end));
+    y=mod.*sin(x*freqs(tone)).*(1-x/(C*rythm*pi));
+end
+        
+   
+end
